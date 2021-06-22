@@ -55,7 +55,7 @@ class App extends Component {
                 <Route
                   exact
                   path="/palette/new"
-                  render={(routeProps) => (
+                  component={(routeProps) => (
                     <Page>
                       <NewPaletteForm
                         savePalette={this.savePalette}
@@ -68,7 +68,7 @@ class App extends Component {
                 <Route
                   exact
                   path="/palette/:paletteId/:colorId"
-                  render={(routeProps) => (
+                  component={(routeProps) => (
                     <Page>
                       <SingleColorPalette
                         colorId={routeProps.match.params.colorId}
@@ -82,7 +82,7 @@ class App extends Component {
                 <Route
                   exact
                   path="/"
-                  render={(routeProps) => (
+                  component={(routeProps) => (
                     <Page>
                       <PaletteList
                         palettes={this.state.palettes}
@@ -106,7 +106,7 @@ class App extends Component {
                   )}
                 />
                 <Route
-                  render={(routeProps) => (
+                  component={(routeProps) => (
                     <Page>
                       <PaletteList
                         palettes={this.state.palettes}
