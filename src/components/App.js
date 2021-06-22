@@ -95,7 +95,7 @@ class App extends Component {
                 <Route
                   exact
                   path="/palette/:id"
-                  render={(routeProps) => (
+                  component={(routeProps) => (
                     <Page>
                       <Palette
                         palette={generatePalette(
