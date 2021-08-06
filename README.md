@@ -1,1 +1,14 @@
-this is just a demo project feel free to clone it & use it. I did use redux so it will be quite hard to understand some parts of it (😁 hope u don't mind)  
+# Color-paletto-chan
+
+this is just a demo project in I  failed miserably in deployment for using old dependencies  ( the CSS broke in the production )   
+
+still if u want to use it😁 feel free 
+* first u need to clone it then 
+### install dependencies    
+```bash
+npm i
+```
+## Start development server
+```bash
+npm start 
+```  
